@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div id="rules" class="info_box">
+        <div class="info-title">
+            <h1 id="title">Hesablama oyunu</h1>
+        </div>
+        <div class="info-list">
+            <span class="rules-title" >Oyun qaydaları</span>
+            <h6 class="info">1. Hər sual üçün yalnız <span>15 saniyəniz</span> olacaq.</h6>
+            <h6 class="info">2. Suallar (*, /, +, -) formasında olacaq.</h6>
+            <h6 class="info">3. Oynadığınız müddətdə oyundan çıxa bilməzsiniz.</h6>
+            <h6 class="info">4. Düzgün cavablarınıza görə xal qazanacaqsınız.</h6>
+            <h6 class="info">5. Oyun 5 sualdan ibarətdir.</h6>
+        </div>
+        <div class="buttons">
+            <button id="start">Başla</button>
+        </div>
+    </div>
+    <div id="result" class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete-text">
+            <h6>Oyunu tamamladınız!</h6>
+        </div>
+        <div id="score" class="score_text">
+        </div>
+        <div class="buttons">
+            <button id="restart">Oyunu Yenidən Başlat</button>
+        </div>
+    </div>
+    <div id="game-app">
+        <div class="header">
+            <h6>Hesablama oyunu</h6>
+            <div class="title">
+                <span>Qalan vaxt</span>
+                <h6 id="time-left">15</h6>
+            </div>
+        </div>
+        <div class="main">
+            <div class="results">
+                <h1 id="first-result"></h1>
+                <span id="selectedCalc"></span>
+                <h1 id="second-result"></h1>
+            </div>
+            <input id="input" type="number">
+            <div class="footer">
+                <div class="answers">
+                    <span id="false">0</span>
+                    <span id="true">0</span>
+                </div>
+                <button id="btn">Hesabla</button>
+                <div class="que-count">
+                    <h6>Suallar: </h6>
+                    <h6 id="que-count">0</h6>
+                    <h6>/</h6>
+                    <h6>5</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
