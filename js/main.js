@@ -71,8 +71,11 @@ function startTimer(time) {
         document.getElementById("time-left").innerHTML = time;
         if (time == 0) {
             clearInterval(counter);
+            startTimer(timeValue);
             falseCount += 1;
             falseAnswer.innerHTML = falseCount;
+            queCount += 1;
+            queText.innerHTML = queCount;
             newQuestion();
         }
     }
@@ -100,7 +103,7 @@ function game() {
             default:
                 break;
         }
-        let sum = +trueCount + falseCount;
+        let sum = trueCount + falseCount;
         queCount += 1;
         queText.innerHTML = queCount;
         input.style.border = "1px solid #72b6ff";
@@ -115,16 +118,16 @@ function game() {
             queCount = 0;
             queText.innerHTML = queCount;
         } else {
+            clearInterval(counter);
+            startTimer(timeValue);
             newQuestion();
             falseCount += 1;
             falseAnswer.innerHTML = falseCount;
-            console.log("buna beraber deyil");
-            clearInterval(counter);
-            startTimer(timeValue);
         }
-        if (sum >= 4) {
+        if (sum == 4) {
             input.disabled = true;
             checkBtn.disabled = true;
+            console.log("beraber");
             setInterval(function () {
                 app.classList.add("hide");
                 app.classList.remove("show");

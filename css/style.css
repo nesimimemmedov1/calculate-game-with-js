@@ -53,6 +53,20 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+button {
+  border-radius: 5px !important;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  background: #007bff;
+}
+
 #rules {
   width: 590px;
   background: #fff;
@@ -65,16 +79,14 @@ input::-webkit-inner-spin-button {
   height: 60px;
   width: 100%;
   border-bottom: 1px solid lightgrey;
+  padding: 0 30px;
+  border-radius: 5px 5px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 30px;
-  border-radius: 5px 5px 0 0;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 #rules .info-title h1 {
@@ -121,39 +133,12 @@ input::-webkit-inner-spin-button {
 
 #rules .buttons button {
   margin: 0 5px;
-  height: 40px;
-  width: 100px;
+  padding: 7px 27px;
   font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #007bff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: #fff;
-  background: #007bff;
 }
 
-#rules .info-title {
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid lightgrey;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 30px;
-  border-radius: 5px 5px 0 0;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.result_box,
-.info_box,
+#result,
+#rules,
 #game-app {
   top: 50%;
   left: 50%;
@@ -166,11 +151,11 @@ input::-webkit-inner-spin-button {
   font-size: 50px;
   background: #fff;
   border-radius: 5px;
+  padding: 25px 30px;
+  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 25px 30px;
-  width: 450px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -226,19 +211,8 @@ input::-webkit-inner-spin-button {
 
 #result .buttons button {
   margin: 0 10px;
-  height: 45px;
-  padding: 0 20px;
+  padding: 8px 20px;
   font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #007bff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: #fff;
-  background: #007bff;
 }
 
 #game-app {
@@ -265,7 +239,7 @@ input::-webkit-inner-spin-button {
 }
 
 #game-app .title h1 {
-  font-size: 36px !important;
+  font-size: 36px;
   margin-bottom: 50px;
 }
 
@@ -426,9 +400,6 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
-  border: none;
-  outline: none;
-  color: #fff;
   border-radius: 5px !important;
   background: #007bff;
   border: 1px solid #007bff;
